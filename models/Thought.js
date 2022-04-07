@@ -18,7 +18,7 @@ const reactionSchema = new Schema({
     type: Date,
     default: Date.now,
     get: () => {
-      const timeElasped = Data.now();
+      const timeElasped = Date.now();
       const today = new Date(timeElasped);
       return today.toDateString();
     },
@@ -37,7 +37,7 @@ const thoughtSchema = new Schema(
       type: Date,
       default: Date.now,
       get: () => {
-        const timeElasped = Data.now();
+        const timeElasped = Date.now();
         const today = new Date(timeElasped);
         return today.toDateString();
       },
